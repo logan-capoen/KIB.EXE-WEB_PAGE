@@ -129,6 +129,25 @@ main {
     display: block; /* S'assure que l'image est bien affichée */
 }
 
+.image-container {
+    text-align: center; /* Centre le contenu */
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 70%; /* Réduit la taille de l'image à 70% du conteneur */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre discrète */
+}
+
+.image-container p {
+    font-size: 0.9em; /* Texte en dessous un peu plus petit */
+    color: #555;
+    margin-top: 10px;
+}
+
+
 /* responsive */
 @media (max-width: 768px) {
     .header {

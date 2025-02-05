@@ -66,7 +66,7 @@ ul {
 }
 
 .header .nav ul li a:hover, .header .nav ul li a.active {
-    color: #993bec;
+    color: #b3b3b3;
 }
 
 /* === Footer === */
@@ -82,9 +82,9 @@ ul {
 }
 
 h2 {
-    color: #000000;
+    color: #e4e3e3;
     font-size: 1.8em;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }

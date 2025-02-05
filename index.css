@@ -6,9 +6,9 @@ body {
     margin: 0;
     font-family: oswald, sans-serif;
     line-height: 1.8;
-    color: #333;
+    color: #e4e3e3;
     background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(16,96,237,1) 49%, rgba(143,0,255,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(16,96,237,1) 49%, rgba(143,0,255,1) 100%);
 }
 
 a {
@@ -66,7 +66,7 @@ ul {
 }
 
 .header .nav ul li a:hover, .header .nav ul li a.active {
-    color: #f3a85e;
+    color: #993bec;
 }
 
 /* === Footer === */
@@ -82,9 +82,9 @@ ul {
 }
 
 h2 {
-    color: #3a2218;
+    color: #000000;
     font-size: 1.8em;
-    border-bottom: 2px solid #3a2218;
+    border-bottom: 2px solid #000000;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }

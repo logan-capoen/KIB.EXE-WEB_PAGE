@@ -4,7 +4,7 @@ body {
     flex-direction: column;   /* Organise en colonne (header, main, footer) */
     min-height: 100vh; 
     margin: 0;
-    font-family: Oswald, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.8;
     color: #333;
     background-color: #f9f9f9;
@@ -31,7 +31,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: #3a2218; /* Vert élégant */
+    background-color: #3a2218;
     color: white;
     position: sticky;
     top: 0;
@@ -168,11 +168,4 @@ main {
     .about h1 {
         font-size: 2em;
     }
-}
-
-.oswald-font {
-    font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 15;
-    font-style: normal;
 }

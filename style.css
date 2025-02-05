@@ -4,7 +4,7 @@ body {
     flex-direction: column;   /* Organise en colonne (header, main, footer) */
     min-height: 100vh; 
     margin: 0;
-    font-family: oswald, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.8;
     color: #333;
     background-color: #f9f9f9;
@@ -76,6 +76,26 @@ ul {
     margin-top: auto;
 }
 
+/* === Page About === */
+.about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.about h1 {
+    text-align: center;
+    color: #3a2218;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.description, .lore, .progression {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #555;
+}
+
 h2 {
     color: #3a2218;
     font-size: 1.8em;
@@ -109,6 +129,25 @@ main {
     display: block; /* S'assure que l'image est bien affichée */
 }
 
+.image-container {
+    text-align: center; /* Centre le contenu */
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 70%; /* Réduit la taille de l'image à 70% du conteneur */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre discrète */
+}
+
+.image-container p {
+    font-size: 0.9em; /* Texte en dessous un peu plus petit */
+    color: #555;
+    margin-top: 10px;
+}
+
+
 /* responsive */
 @media (max-width: 768px) {
     .header {
@@ -129,11 +168,4 @@ main {
     .about h1 {
         font-size: 2em;
     }
-}
-
-.oswald-font {
-    font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 15;
-    font-style: normal;
 }

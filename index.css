@@ -4,7 +4,7 @@ body {
     flex-direction: column;   /* Organise en colonne (header, main, footer) */
     min-height: 100vh; 
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: oswald, sans-serif;
     line-height: 1.8;
     color: #333;
     background: rgb(0,0,0);
@@ -136,4 +136,11 @@ main {
     .about h1 {
         font-size: 2em;
     }
+}
+
+.oswald-font {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 15;
+    font-style: normal;
 }

@@ -46,6 +46,10 @@ ul {
     color: white;
 }
 
+.header .logo {
+    box-shadow: rgb(249, 228, 133) 2px 2px 10px;
+}
+
 .header .nav ul {
     display: flex;
     gap: 15px;

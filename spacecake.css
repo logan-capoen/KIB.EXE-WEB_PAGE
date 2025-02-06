@@ -6,9 +6,9 @@ body {
     margin: 0;
     font-family: oswald, sans-serif;
     line-height: 1.8;
-    color: #e4e3e3;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(16,96,237,1) 49%, rgba(143,0,255,1) 100%);
+    color: #333;
+    background-color: #f9f9f9;
+    background: linear-gradient(-50deg, #000000, rgb(82, 16, 196) 49%, #982adc, rgb(181, 130, 247) 100%);
 }
 
 a {
@@ -32,7 +32,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: #000000; /* Vert élégant */
+    background-color: #000000;
     color: white;
     position: sticky;
     top: 0;
@@ -40,14 +40,14 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* .header .logo {
-    box-shadow: white 2px 2px 10px;
-} */
-
 .header .logo a {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
+}
+
+.header .logo {
+    box-shadow: rgb(255, 255, 255) 2px 2px 10px;
 }
 
 .header .nav ul {
@@ -81,10 +81,30 @@ ul {
     margin-top: auto;
 }
 
+/* === Page About === */
+.about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.about h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.description, .lore, .progression {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
 h2 {
-    color: #000000;
+    color: #ffffff;
     font-size: 1.8em;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
@@ -101,9 +121,15 @@ ul li {
 section {
     text-align: center;
     padding: 50px;
-    margin: 50px;
-    background-color: #ffffff3a;
-    border-radius: 15px;
+    margin: 20px;
+    background-color: #e1e1e18b;
+}
+
+iframe {
+    text-align: center;
+    margin: 20px;
+    margin-left: 150px;
+    box-shadow: #d23ffb 2px 2px 10px;
 }
 
 main {
@@ -115,6 +141,25 @@ main {
     height: auto; /* Maintient le ratio d'aspect pour éviter la déformation */
     display: block; /* S'assure que l'image est bien affichée */
 }
+
+.image-container {
+    text-align: center; /* Centre le contenu */
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 70%; /* Réduit la taille de l'image à 70% du conteneur */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre discrète */
+}
+
+.image-container p {
+    font-size: 0.9em; /* Texte en dessous un peu plus petit */
+    color: #ffffff;
+    margin-top: 10px;
+}
+
 
 /* responsive */
 @media (max-width: 768px) {
@@ -136,11 +181,4 @@ main {
     .about h1 {
         font-size: 2em;
     }
-}
-
-.oswald-font {
-    font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 15;
-    font-style: normal;
 }

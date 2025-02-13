@@ -116,6 +116,97 @@ main {
     display: block; /* S'assure que l'image est bien affichée */
 }
 
+/* card flip */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 310px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 2px solid rgb(23, 75, 148);
+  border-radius: 1rem;
+  box-shadow: 10px 10px 35px rgb(29, 149, 235);
+}
+
+.flip-card-front {
+  background: black;
+  color: rgb(255, 255, 255);
+}
+
+.flip-card-back {
+  background: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Ajoutez ce code à votre fichier CSS */
+.flip-card-front img, .flip-card-back img {
+    width: 200px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect pour éviter la déformation */
+    margin-top: auto;
+    align-self: center; /* Positionne l'image en bas de la carte */
+    margin-bottom: -35px; /* Ajoute un espace en bas de l'image */
+    position: absolute;
+}
+
+.flip-card-front p, .flip-card-back p {
+    position: absolute;
+    top: 10px; /* Ajustez la distance par rapport au haut de la carte */
+    left: 50%;
+    text-wrap: nowrap;
+    width: 20ch;
+    overflow: hidden;
+    animation: typing 2s steps(20) infinite;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+}
+
 /* responsive */
 @media (max-width: 768px) {
     .header {

@@ -191,7 +191,7 @@ main {
 
 .flip-card-front p, .flip-card-back p {
     position: absolute;
-    top: 10px; /* Ajustez la distance par rapport au haut de la carte */
+    top: 10px;
     left: 50%;
     text-wrap: nowrap;
     width: 20ch;
@@ -200,6 +200,7 @@ main {
     transform: translateX(-50%);
     margin: 0;
   }
+
 
 @keyframes typing {
     from {
